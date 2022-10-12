@@ -14,6 +14,18 @@ body {
 ul {
   list-style: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px 0 15px;
+}
+.section {
+  padding: 94px 0 94px 0;
+}
 .logo {
   font-family: raleway, sans-serif;
   font-size: 26px;
@@ -39,7 +51,6 @@ ul {
 .header {
   display: flex;
 }
-
 .nav-link {
   color: var(--brand-color-black);
   text-decoration: none;
@@ -59,14 +70,12 @@ ul {
 .contacts {
   display: flex;
 }
-
 .contact {
   color: var(--brand-color-gray);
 }
 .hat {
   background-color: var(--brand-background-black);
 }
-
 .hat-header {
   color: var(--brand-color-white);
   font-size: 44px;
@@ -91,7 +100,6 @@ ul {
 .place-order:hover {
   background-color: var(--brand-color-dark-blue);
 }
-
 .benefits {
   display: flex;
 }
@@ -107,7 +115,6 @@ ul {
   line-height: 1.171;
   letter-spacing: 0.03em;
 }
-
 .we-do {
   display: flex;
 }
@@ -152,7 +159,6 @@ footer {
 .adres:hover {
   color: var(--brand-color-white);
 }
-
 .filter {
   display: flex;
 }
@@ -175,6 +181,11 @@ footer {
 .portfolio-works {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-works-header {
   font-size: 18px;
