@@ -13,6 +13,7 @@ body {
 }
 ul {
   list-style: none;
+  padding-left: 0;
 }
 img {
   display: block;
@@ -21,6 +22,7 @@ img {
 }
 .container {
   max-width: 1200px;
+  margin: 0 auto;
   padding: 0 15px 0 15px;
 }
 .section {
@@ -34,6 +36,7 @@ img {
   color: var(--brand-color-black);
   text-decoration: none;
   letter-spacing: 0.03em;
+  padding: 24px 0 25px;
 }
 .logo:focus,
 .logo:hover {
@@ -48,9 +51,11 @@ img {
   font-family: raleway, sans-serif;
   font-size: 26px;
 }
-.header {
+
+.container-head {
   display: flex;
 }
+
 .nav-link {
   color: var(--brand-color-black);
   text-decoration: none;
@@ -59,19 +64,45 @@ img {
   font-weight: 500;
   letter-spacing: 0.02em;
   display: flex;
+  margin-right: auto;
 }
+
 .nav-link:focus,
 .nav-link:hover {
   color: var(--brand-color-blue);
 }
+
 .site-nav {
   display: flex;
+  padding-left: 93px;
+  align-items: center;
 }
+.site-nav-link:nth-last-child(-n + 2) {
+  margin-left: 50px;
+}
+
 .contacts {
   display: flex;
+  align-items: center;
 }
 .contact {
   color: var(--brand-color-gray);
+}
+.contact-item:last-child {
+  margin-left: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .hat {
   background-color: var(--brand-background-black);

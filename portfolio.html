@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -15,24 +19,30 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container container-head">
         <nav class="nav-link">
           <a href="./index.html" class="logo"
             ><span class="logo-web">Web</span>Studio</a
           >
           <ul class="site-nav">
-            <li><a href="./index.html" class="nav-link">Студія</a></li>
-            <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-            <li><a href="#" class="nav-link">Контакти</a></li>
+            <li class="site-nav-link">
+              <a href="./index.html" class="nav-link">Студія</a>
+            </li>
+            <li class="site-nav-link">
+              <a href="./portfolio.html" class="nav-link">Портфоліо</a>
+            </li>
+            <li class="site-nav-link">
+              <a href="#" class="nav-link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts">
-          <li>
+          <li class="contact-item">
             <a href="mailto:info@devstudio.com" class="nav-link contact"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contact-item">
             <a href="tel:+380961111111" class="nav-link contact"
               >+38 096 111 11 11</a
             >
@@ -40,11 +50,10 @@
         </ul>
       </div>
     </header>
-
     <main>
       <section class="section">
         <div class="container">
-          <h1>Наші роботи</h1>
+          <h1 class="visually-hidden">Наші роботи</h1>
           <ul class="filter">
             <li><button type="button" class="filter-button">Усі</button></li>
             <li>
