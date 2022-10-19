@@ -50,6 +50,9 @@ img {
   text-decoration: none;
   font-family: raleway, sans-serif;
   font-size: 26px;
+  display: inline-block;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .container-head {
@@ -107,17 +110,29 @@ img {
 .hat {
   background-color: var(--brand-background-black);
 }
+.hat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hat-header {
   color: var(--brand-color-white);
   font-size: 44px;
   text-transform: uppercase;
   line-height: 1.363;
   letter-spacing: 0.06em;
+  max-width: 696px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 0 30px 0;
+  padding-top: 200px;
 }
 .header-second {
   font-size: 36px;
   line-height: 1.171;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin: 0 0 50px 0;
 }
 .place-order {
   color: var(--brand-color-white);
@@ -126,6 +141,12 @@ img {
   cursor: pointer;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  width: 216px;
+  height: 50px;
+  display: inline-block;
+  margin-bottom: 200px;
 }
 .place-order:focus,
 .place-order:hover {
@@ -133,44 +154,76 @@ img {
 }
 .benefits {
   display: flex;
+  justify-content: space-between;
+}
+.benefits-item {
+  max-width: 270px;
 }
 .benefits-header {
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.172;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin: 0 0 10px 0;
 }
 .benefits-text {
   font-size: 14px;
   color: var(--brand-color-gray);
-  line-height: 1.171;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin: 0 auto;
 }
 .we-do {
   display: flex;
+  justify-content: space-between;
 }
 .team {
   display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 .team-section {
   background-color: var(--brand-background-white);
+}
+.team-img {
+  display: block;
 }
 .team-header {
   font-size: 16px;
   line-height: 1.178;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin: 30px 0 10px 0;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.178;
   letter-spacing: 0.03em;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 30px;
+  color: var(--brand-color-gray);
 }
 .team-description {
   background-color: var(--brand-color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer {
   background-color: var(--brand-background-black);
 }
+.address-table {
+  margin: 0;
+  /* height: 81px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  padding-bottom: 60px;
+}
+
 .address-link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
